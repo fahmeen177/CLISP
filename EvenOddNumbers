@@ -1,0 +1,20 @@
+% CLISP program to find if the numbers are even, odd or both..
+
+(defun numbers()
+(defun "Enter the value of x: ")
+(setq x(read))
+(defun "Enter the value of y: ")
+(setq y(read))
+
+(if (and (evenp x) (oddp y))
+(princ "These numbers are even and odd! "))
+
+(if (and (oddp x) (evenp y))
+(princ "These numbers are odd and even! "))
+
+(if (and (oddp x) (oddp y))
+(princ "The numbers are odd! "))
+
+(if (and (evenp x) (evenp y))
+(princ "The numbers are even! "))
+))
